@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>苏炜豪-前端工程师-2021</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #eee;
+      margin: 20px 0;
+    }
+
+    article {
+      width: 21cm;
+      min-height: 29.7cm;
+      background: white;
+      margin: 0 auto;
+      overflow: auto;
+      padding: 1em;
+    }
+
+    h3, h4, h5, h6 {
+      margin: 0;
+    }
+
+    h2::after {
+      content: '';
+      display: block;
+      height: 1px;
+      width: 130px;
+      background: rgba(255, 102, 0, 0.11);
+      margin-top: 4px;
+    }
+
+    a {
+      color: #999;
+      text-decoration: none;
+      border-bottom: 1px solid;
+    }
+
+    a:hover {
+      color: #ff6600;
+    }
+
+    ol, ul, li {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    p,
+    li {
+      color: #666;
+    }
+
+    strong {
+      font-weight: normal;
+      color: #f60;
+    }
+  </style>
+  <style media="print">
+    body {
+      margin: 0;
+    }
+
+    .page2 {
+      page-break-before: always;
+      margin-top: 30px;
+    }
+  </style>
+  <style>
+    .bio {
+      position: relative;
+    }
+
+    .bio h1 {
+      font-size: 26px;
+    }
+
+    .bio img {
+      position: absolute;
+      top: 0;
+      right: 20px;
+    }
+
+    .bio p {
+      line-height: 0.6em;
+    }
+  </style>
+  <style>
+    .projects {
+    }
+
+    .projects ol li {
+      margin: 24px 0;
+    }
+
+    .projects ol li p {
+      line-height: 0.6em;
+
+    }
+
+    .projects header {
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+  <style>
+    .skills {
+    }
+
+    .skills .wrapper {
+      display: flex;
+    }
+
+    .skills #skills {
+      width: 520px;
+      height: 270px;
+    }
+
+    .skills ul li {
+      margin: 4px 0;
+    }
+  </style>
+  <style>
+    .openSource {
+    }
+
+    .openSource header {
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+  <style>
+    .others {
+    }
+
+    .others li {
+      margin: 4px 0;
+    }
+  </style>
+  <style>
+    .education ul li {
+      margin: 4px 0;
+    }
+
+    .education em::after {
+      display: block;
+      content: '';
+      margin-bottom: 28px;
+    }
+  </style>
+</head>
+<body>
+<article>
+  <!-- 个人信息 -->
+  <section class="bio">
+    <h1>苏炜豪</h1>
+    <img src="./images/self.jpg" alt="头像" width="100px" height="100px">
+    <p>
+      男 | 23岁 | 前端开发工程师 | 广州
+    </p>
+    <p>
+      手机: 13202029354 | 微信: 13202029354 | 邮箱: 475464842@qq.com
+    </p>
+  </section>
+  <!--项目-->
+  <section class="projects">
+    <h2>项目经历</h2>
+    <ol>
+      <li>
+        <header>
+          <h3>咕噜UI</h3>
+          <span>
+              <a target="_blank" href="https://github.com/suweih/gulu-ui-1">源码链接</a>
+              <a target="_blank" href="https://suweih.github.io/gulu-ui-website/index.html#/">项目预览</a>
+            </span>
+        </header>
+        <p>
+          一款基于 <strong>Vue3</strong> / <strong>Vue-Router</strong> / <strong>TypeScript</strong> 的 UI 框架。
+        </p>
+        <p>
+          主要组件有Switch组件、<strong>Button组件</strong> 、Dialog组件等
+        </p>
+        <p>
+          制作过程让我<strong>学习到</strong>使用TypeScript的严谨性,组件的封装,CSS样式技巧及响应式页面
+        </p>
+        <p>
+          从Vue2到Vue3的v-model双向数据绑定的修改,重新学习
+        </p>
+        <p>
+          已打包上传至<strong>npm官网</strong>,使用者可以通过终端来安装库使用
+        </p>
+
+      </li>
+      <li>
+        <header>
+          <h3>简易记账</h3>
+          <span>
+              <a target="_blank" href="https://github.com/suweih/morney-demo">源码链接</a>
+              <a target="_blank" href="https://suweih.github.io/morney-website/#/money">项目预览</a>
+            </span>
+        </header>
+        <p>
+          这是一个基于 <strong>Vue2全家桶</strong> 的本地版移动端单页面应用
+        </p>
+        <p>
+          目的是<strong>快速记账</strong>,可用作为自己的日常记账
+        </p>
+        <p>
+          制作过程学习到如何<strong>引入SVG</strong>,封装通用组件模块化,CSS样式技巧
+        </p>
+        <p>
+          通过<strong>localStore</strong>存储数据 ,通过<strong>Vuex</strong>来进行数据管理
+        </p>
+      </li>
+      <li>
+        <header>
+          <h3>多人共享博客</h3>
+          <span>
+              <a target="_blank" href="https://github.com/suweih/blog-client">源码链接</a>
+              <a target="_blank" href="https://suweih.github.io/blog-client/dist/#/">项目预览</a>
+            </span>
+        </header>
+        <p>
+          这是一个基础<strong>Vue.js技术栈</strong> ,涉及Vue-cli/Vue-Router/Vuex/element-ui等技术
+        </p>
+        <p>
+          通过博客<strong>登录</strong> ,可以在'<strong>我的</strong>'界面,可以记录前端知识点
+        </p>
+        <p>
+          在制作过程学习中,学习到<strong>前后端</strong>接口的规范,项目如何搭建,路由的创建,登录<strong>权限</strong>验证等技术
+        </p>
+        <p>
+          对静态页面的样式技巧有了很大的提高,对<strong>组件封装</strong>的了解与运用有深刻体会
+        </p>
+      </li>
+    </ol>
+  </section>
+  <!--技能-->
+  <section class="skills ">
+    <h2>技能</h2>
+    <div class="wrapper">
+      <div id="skills"></div>
+      <ul>
+        <li>熟悉HTML 5/CSS 3页面制作技巧,熟悉PhotoShop设计工具</li>
+        <li>熟悉<strong>前后端分离</strong>技术,熟悉AJAX、跨域、Cookie等</li>
+        <li>熟悉掌握<strong>Vue全家桶</strong>的使用,包括Vue-cli、Vuex、Vue-Router等</li>
+        <li>熟悉ES6 ,包括let、Promise等</li>
+        <li>了解主流的<strong>element-UI库</strong>的使用</li>
+        <li>了解TypeScript的使用</li>
+        <li>了解<strong>Webpack的配置</strong></li>
+      </ul>
+    </div>
+  </section>
+  <!--开源项目-->
+  <section class="openSource page2">
+    <h2>开源项目</h2>
+    <ul>
+      <li>
+        <header>
+          <h3>会动的皮卡丘</h3>
+          <span>
+              <a target="_blank" href="https://github.com/suweih/Picaku-1">源码链接</a>
+              <a target="_blank" href="https://suweih.github.io/Picaku-1/dist/test.html">项目预览</a>
+          </span>
+        </header>
+        <p>这是我在学习 <strong>CSS3和动画</strong> 时制作的一个可爱作品</p>
+      </li>
+      <li>
+        <header>
+          <h3>简易画板</h3>
+          <span>
+              <a target="_blank" href="https://github.com/suweih/canvas-demo-1">源码链接</a>
+              <a target="_blank" href="https://suweih.github.io/canvas-demo-1/">项目预览</a>
+            </span>
+        </header>
+        <p>我在学习 <strong>Canvas</strong> 时做的一个小作品</p>
+      </li>
+    </ul>
+  </section>
+
+  <!--  其他链接-->
+  <section class="others">
+    <h2>其他链接</h2>
+    <ul>
+      <li><a target="_blank" href="https://www.zhihu.com/people/13202029354">我的博客</a>，目前已有 40 篇技术文章</li>
+      <li><a target="_blank" href="https://github.com/suweih">我的 GitHub</a>，过去三个月有 150 次提交</li>
+    </ul>
+  </section>
+
+  <!--  教育经历-->
+  <section class="education">
+    <h2>教育经历</h2>
+    <p>
+      <span><time>2018年</time>~<time>2021年</time></span>
+      广东水利电力职业技术学院 专科
+    </p>
+    <ul>
+      <li>
+        获<strong>国家奖学金</strong>1次、学业及素质奖学金2次、<strong>优秀大学生</strong>等荣誉称号3次
+      </li>
+      <li>
+        代表学校参加省职业院校<strong>技能竞赛</strong>,获<strong>一等奖</strong>
+      </li>
+      <li>
+        作为社团骨干，负责给社员的进行专业知识培训，提高其工作效率
+      </li>
+      <em></em>
+    </ul>
+  </section>
+
+  <!--  &lt;!&ndash;个人经历&ndash;&gt;-->
+  <!--  <section class="jobs">-->
+  <!--    <h2>个人经历</h2>-->
+  <!--    -->
+  <!--  </section>-->
+</article>
+
+<script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>
